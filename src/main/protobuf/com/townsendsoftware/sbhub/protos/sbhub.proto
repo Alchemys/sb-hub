@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package com.townsendsoftware.sbhub.protos;
+
+option java_multiple_files = true;
+option java_package = "com.townsendsoftware.sbhub.protos";
+option java_outer_classname = "SbHubMessages";
+
+message FibonacciSequence {
+  int32 version = 1;
+  int32 count = 2;
+  repeated int64 sequence = 4;
+}
+
+message FibonacciParameters {
+  int32 version = 1;
+  int64 sequenceSeed0 = 2;
+  int64 sequenceSeed1 = 3;
+  int32 iterations = 4;
+}
+
+enum ResponseLevel {
+  SUCCESS = 0;
+  WARNING = 1;
+  ERROR = 2;
+}
+
+message ResponseMessage {
+  int32 version = 1;
+  string message = 2;
+  ResponseLevel level = 3;
+}
+
+message FibonacciResponse {
+  int32 version = 1;
+  FibonacciSequence sequence = 2;
+  FibonacciParameters parameters = 3;
+  ResponseMessage message = 4;
+}
