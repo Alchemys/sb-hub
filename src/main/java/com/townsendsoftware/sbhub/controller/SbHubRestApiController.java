@@ -1,5 +1,6 @@
 package com.townsendsoftware.sbhub.controller;
 
+import com.townsendsoftware.sbhub.protos.FibonacciResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +15,6 @@ import com.google.gson.GsonBuilder;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.util.JsonFormat;
 import com.townsendsoftware.sbhub.fibs.components.FibsCalculator;
-import com.townsendsoftware.sbhub.protos.FibonacciResponse;
 
 import lombok.extern.slf4j.Slf4j;
 

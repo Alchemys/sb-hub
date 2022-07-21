@@ -6,16 +6,10 @@ import static com.townsendsoftware.sbhub.fibs.constants.FibsConstants.CURRENT_PR
 import java.util.ArrayList;
 import java.util.List;
 
+import com.townsendsoftware.sbhub.protos.*;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.stereotype.Component;
 
-import com.townsendsoftware.sbhub.protos.FibonacciParameters;
-import com.townsendsoftware.sbhub.protos.FibonacciResponse;
-import com.townsendsoftware.sbhub.protos.FibonacciSequence;
-import com.townsendsoftware.sbhub.protos.ResponseMessage;
-import com.townsendsoftware.sbhub.protos.ResponseLevel;
-
-import org.apache.commons.collections4.CollectionUtils;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
